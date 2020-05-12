@@ -30,7 +30,7 @@ public class MouseLock : MonoBehaviour
             float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
             xRotation -= mouseY;
-            xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+            xRotation = Mathf.Clamp(xRotation, -40f, 40f);
 
             float fov = Camera.main.fieldOfView;
             fov += Input.GetAxis("Mouse ScrollWheel") * fovSensitivity;
